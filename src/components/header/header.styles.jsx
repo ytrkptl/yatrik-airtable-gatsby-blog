@@ -1,0 +1,152 @@
+import styled from "styled-components"
+import { Link } from "gatsby"
+
+export const StyledHeader = styled.header`
+  background: var(--headerTextBg);
+  height: auto;
+  width: 100%;
+`
+export const StyledDiv = styled.div`
+  display: grid;
+  // justify-content: space-between;
+  align-items: center;
+  max-width: 960px;
+  padding: 10px;
+  margin: auto;
+  grid-template-columns: 9.6fr 1.2fr 1.2fr;
+
+  @media screen and (max-width: 400px) {
+    grid-template-columns: 7.6fr 2.2fr 2.2fr;
+  }
+`
+export const StyledH2 = styled.h1`
+  margin: 0;
+  padding: 0;
+  margin-block-start: 0;
+  margin-block-end: 0;
+  margin-inline-start: 0;
+  margin-inline-end: 0;
+  padding-left: 10px;
+  font-family: Segoe UI, sans-serif;
+
+  & a {
+    color: var(--headerText);
+
+    &:hover {
+      color: var(--headerTextHovered);
+    }
+  }
+`
+
+export const StyledHeaderLink = styled(Link)`
+  color: white;
+  font-weight: bold;
+  text-decoration: none;
+
+  @media screen and (max-width: 400px) {
+    font-size: 22px;
+  }
+`
+export const Overlay = styled.div`
+  height: 0;
+  width: 100%;
+  position: fixed;
+  z-index: 1;
+  left: 0;
+  top: 0;
+  background-color: var(--overlayBg);
+  overflow: hidden;
+  transition: 0.5s;
+`
+export const OverlayContent = styled.div`
+  height: 100%;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+
+  @media screen and (max-width: 600px) {
+    justify-content: center;
+  }
+`
+export const StyledOverlayLinkButton = styled.button.attrs({ type: "button" })`
+  padding: 8px;
+  text-decoration: none;
+  font-size: 28px;
+  background-color: transparent;
+  border: none;
+  outline: none;
+  padding: 0px;
+  color: var(--overlayLink);
+  margin-left: 10px;
+  margin-right: 10px;
+  display: flex;
+  transition: all 0.2s ease-in-out;
+
+  &:hover {
+    color: var(--overlayLinkHovered);
+    transform: scale(1.1);
+  }
+
+  &:focus {
+    color: var(--overlayLinkHovered);
+  }
+`
+export const StyledOverlayLink = styled(Link)`
+  padding: 8px;
+  text-decoration: none;
+  font-size: 28px;
+  background-color: transparent;
+  border: none;
+  outline: none;
+  padding: 0px;
+  color: var(--overlayLink);
+  margin-left: 10px;
+  margin-right: 10px;
+  display: flex;
+  transition: all 0.2s ease-in-out;
+
+  &:hover {
+    color: var(--overlayLinkHovered);
+    transform: scale(1.1);
+  }
+
+  &:focus {
+    color: var(--overlayLinkHovered);
+  }
+`
+// export const StyledToggleLabel = styled.label`
+//   position: relative;
+//   display: inline-block;
+//   width: 60px;
+//   height: 34px;
+// `
+// export const StyledToggleInputButton = styled.input.attrs({type: 'checkbox'})`
+//   opacity: 0;
+//   width: 0;
+//   height: 0;
+// `
+// export const StyledToggleSpan = styled.span`
+//   position: absolute;
+//   cursor: pointer;
+//   top: 0;
+//   left: 0;
+//   right: 0;
+//   bottom: 0;
+//   background-color: #ccc;
+//   -webkit-transition: .4s;
+//   transition: .4s;
+
+//   &:before {
+//     position: absolute;
+//     content: "";
+//     height: 26px;
+//     width: 26px;
+//     left: 4px;
+//     bottom: 4px;
+//     background-color: white;
+//     -webkit-transition: .4s;
+//     transition: .4s;
+//   }
+// `

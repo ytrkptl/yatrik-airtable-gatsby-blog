@@ -1,0 +1,69 @@
+html {
+  font-family: sans-serif;
+  -ms-text-size-adjust: 100%;
+  -webkit-text-size-adjust: 100%;
+  overflow-x: hidden;
+  font-family: sans-serif;
+
+}
+body {
+  margin: 0;
+  width: 100%;
+  height: 100%;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  --bg: white;
+  --textNormal: #222;
+  --textTitle: #222;
+  --blogLink: rgb(66, 66, 248);
+  --blogLinkHovered: blue;
+  --borderDivLine: lightgray;
+  --emoji: "👈";
+  --headerText: white;
+  --headerTextHovered: rgb(255, 208, 0);
+  --headerTextBg: rebeccapurple;
+  --themeEmoji: "🌕";
+  --themeText: "Light";
+  --themeTextColor: white;
+  --footerLinkColor: blue;
+  --footerBgColor: lightgray;
+  --hamburgerBg: rgb(255, 208, 0);
+  --overlayBg: rebeccapurple;
+  --overlayLink: white;
+  --overlayLinkHovered: gold;
+  --creditsHeaderText: magenta;
+  --creditsHeaderBg: linear-gradient(120deg, #f6d365 0%, #fda085 100%);
+  --creditListBgColor: #1fd1f9;
+  --creditsListBgImage: linear-gradient(315deg, #1fd1f9 0%, #b621fe 74%);
+  --themeMessageForAirtable: none;
+
+  background-color: var(--bg);
+}
+body.dark {
+  -webkit-font-smoothing: antialiased;
+
+  --bg: rgb(37, 37, 37);
+  --textNormal: rgb(211, 211, 211);
+  --textTitle: white;
+  --blogLink: #f39ebc;
+  --blogLinkHovered: #fd77a6;
+  --borderDivLine: rgb(194, 165, 91);
+  --emoji: "👈🏽";
+  --headerText: rgb(243, 243, 243);
+  --headerTextHovered: rgb(236, 188, 65);
+  --headerTextBg: rgb(26, 25, 25);
+  --themeEmoji: "🌑";
+  --themeText: "Dark";
+  --themeTextColor: #f39ebc;
+  --footerLinkColor: #f39ebc;
+  --footerBgColor: rgb(56, 55, 55);
+  --hamburgerBg: #f39ebc;
+  --overlayBg: rgb(26, 25, 25);
+  --overlayLink: #f39ebc;
+  --overlayLinkHovered: #fd77a6;
+  --creditsHeaderText: #fd77a6;
+  --creditsHeaderBg: linear-gradient(to right, #5f6468 0%, #596164 100%);
+  --creditListBgColor: #d7d7d7;
+  --creditsListBgImage: linear-gradient(147deg, #4e4d4d 0%, #444343 74%);
+  --themeMessageForAirtable: flex;
+}
