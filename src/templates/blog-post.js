@@ -9,7 +9,7 @@ export default ({ data }) => {
   const post = data.airtable.data
   return (
     <Layout>
-      <PostWrapperParent style={{maxWidth: 960}}>
+      <PostWrapperParent style={{maxWidth: 960, lineHeight: '1.3em'}}>
       <h1>{post.title}</h1>
       <span>Written by {post.author}</span>
       <p>{post.formattedDate}</p>

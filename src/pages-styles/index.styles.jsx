@@ -88,6 +88,7 @@ export const ImageStyle = styled.img`
 export const StyledExcerpt = styled.div`
   width: 100%;
   box-sizing: border-box;
+  line-height: 1.3em;
 
   @media screen and (max-width: 600px) {
     margin: 0px;
