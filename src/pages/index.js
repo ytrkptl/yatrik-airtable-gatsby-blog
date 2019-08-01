@@ -4,6 +4,7 @@ import { graphql } from "gatsby"
 import Layout from "../components/layout/layout"
 import SEO from "../components/seo"
 import {
+  PostWrapperParent,
   PostWrapper,
   BlogLinkAndEmojiWrapper,
   EmojiStyle,
@@ -20,29 +21,31 @@ export default ({ data }) => {
   return (
     <Layout>
       <SEO title="Home" />
-      <h2 style={{ margin: "0.2em auto" }}>See all my blogs below</h2>
-      <p>{data.allAirtable.totalCount} Posts</p>
-      {data.allAirtable.edges.map(({ node }) => (
-        <PostWrapper key={node.id}>
-          <BlogLink to={node.data.slug}>
-            <BlogTitle>
-              <BlogLinkAndEmojiWrapper>
-                {node.data.title}
-                <EmojiStyle />
-              </BlogLinkAndEmojiWrapper>
-            </BlogTitle>
-          </BlogLink>
-          <p>{node.data.formattedDate}</p>
-          <ImageAndTextDiv>
-            <ImageAndTextGrid>
-              <ImageContainer>
-                <ImageStyle src={node.data.image[0].url} alt="blog-image" />
-              </ImageContainer>
-              <StyledExcerpt>{node.data.excerpt}</StyledExcerpt>
-            </ImageAndTextGrid>
-          </ImageAndTextDiv>
-        </PostWrapper>
-      ))}
+      <PostWrapperParent>
+        <h2 style={{ margin: "0.2em auto" }}>See all my blogs below</h2>
+        <p>{data.allAirtable.totalCount} Posts</p>
+        {data.allAirtable.edges.map(({ node }) => (
+          <PostWrapper key={node.id}>
+            <BlogLink to={node.data.slug}>
+              <BlogTitle>
+                <BlogLinkAndEmojiWrapper>
+                  {node.data.title}
+                  <EmojiStyle />
+                </BlogLinkAndEmojiWrapper>
+              </BlogTitle>
+            </BlogLink>
+            <p>{node.data.formattedDate}</p>
+            <ImageAndTextDiv>
+              <ImageAndTextGrid>
+                <ImageContainer>
+                  <ImageStyle src={node.data.image[0].url} alt="blog-image" />
+                </ImageContainer>
+                <StyledExcerpt>{node.data.excerpt}</StyledExcerpt>
+              </ImageAndTextGrid>
+            </ImageAndTextDiv>
+          </PostWrapper>
+        ))}
+      </PostWrapperParent>
     </Layout>
   )
 }

@@ -1,4 +1,4 @@
-import styled, { css } from "styled-components"
+import styled, { css } from "styled-components";
 import { Link } from "gatsby"
 
 export const StyledFooter = styled.footer`
@@ -17,6 +17,7 @@ export const StyledFooter = styled.footer`
   
   a {
     color: var(--footerLinkColor);
+    text-decoration: none;
   }
 `
 export const StyledFooterGrid = styled.div`
@@ -27,23 +28,21 @@ export const StyledFooterGrid = styled.div`
   color: var(--textNormal);
   width: 100%;
   padding: 4%;
-  grid-gap: 10%;
+  grid-gap: 2%;
 `
-export const StyledColumn1 = styled.div`
+const StyledColumn = css`
   display: flex;
   flex-direction: column;
-  text-align: start;
+  text-align: center;
+`;
+export const StyledColumn1 = styled.div`
+  ${StyledColumn};
 `
 export const StyledColumn2 = styled.div`
-  display: flex;
-  flex-direction: column;
-  text-align: start;
+  ${StyledColumn};
 `
 export const StyledColumn3 = styled.div`
-  display: flex;
-  flex-direction: column;
-  text-align: start;
-  
+  ${StyledColumn};
 `
 export const StyledText = styled.p`
   padding-bottom: 4px;
@@ -64,9 +63,9 @@ export const StyledFooterLink = styled(Link)`
 `;
 
 
-export const StyledGitHubLink = styled.img`
-  width: 54px;
-`
+// export const StyledGitHubLink = styled.img`
+//   width: 54px;
+// `
 
 export const Row2 = styled.div`
   grid-column-start: span 3;
@@ -76,4 +75,5 @@ export const Row2 = styled.div`
   align-self: center;
   min-height: 4%;
   margin: 4% auto;
+
 `

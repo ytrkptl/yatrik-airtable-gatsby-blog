@@ -18,17 +18,17 @@ const Footer = () => {
           <StyledText>
             © {new Date().getFullYear()}, Built with
             {` `}
-            <StyledFooterLink href="https://www.gatsbyjs.org" target="_blank">Gatsby</StyledFooterLink>
+            <a href="https://www.gatsbyjs.org" target="_blank">Gatsby</a>
           </StyledText>
         </StyledColumn1>
         <StyledColumn2>
-          <StyledFooterLink to="/credits/">Submit a blog post!</StyledFooterLink>
-          <StyledFooterLink to="/credits/">Switch to Gallery View</StyledFooterLink>
-          <StyledFooterLink to="/credits/">About Me</StyledFooterLink>
+          <StyledFooterLink to="/submit-a-new-post/">Submit a blog post!</StyledFooterLink>
+          <StyledFooterLink to="/gallery-view/">Switch to Gallery View</StyledFooterLink>
+          <StyledFooterLink to="/aboutme/">About Me</StyledFooterLink>
           <StyledFooterLink to="/credits/">Credits</StyledFooterLink>
         </StyledColumn2>
         <StyledColumn3>
-          <StyledFooterLink to="/credits/">GitHub</StyledFooterLink>
+          <a href="https://github.com/ytrkptl/yatrik-airtable-gatsby-blog" target="_blank">GitHub</a>
         </StyledColumn3>
         <Row2>Created by: --- Yatrik Patel --- July 31, 2019</Row2>
       </StyledFooterGrid>

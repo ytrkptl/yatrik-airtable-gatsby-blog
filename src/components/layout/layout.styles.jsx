@@ -5,7 +5,7 @@ export const DivInLayout = styled.div`
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  padding: 4%;
+  padding-top: 2%;
   padding-bottom: 0;
   max-width: 960;
   background-color: var(--bg);

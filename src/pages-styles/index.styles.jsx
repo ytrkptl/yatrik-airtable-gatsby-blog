@@ -1,6 +1,10 @@
 import styled from "styled-components"
 import { Link } from "gatsby"
 
+export const PostWrapperParent = styled.div`
+  margin-left: 4%;
+  margin-right: 4%;
+`
 export const PostWrapper = styled.div`
   border-top: 1px solid var(--borderDivLine);
   margin-top: 2em;
@@ -83,7 +87,6 @@ export const ImageStyle = styled.img`
 
 export const StyledExcerpt = styled.div`
   width: 100%;
-  margin-top: 10px;
   box-sizing: border-box;
 
   @media screen and (max-width: 600px) {

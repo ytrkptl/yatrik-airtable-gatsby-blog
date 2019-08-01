@@ -4,11 +4,12 @@ import Layout from "../components/layout/layout"
 import unified from "unified"
 import markdown from "remark-parse"
 import html from "remark-html"
-
+import { PostWrapperParent } from '../pages-styles/index.styles';
 export default ({ data }) => {
   const post = data.airtable.data
   return (
     <Layout>
+      <PostWrapperParent style={{maxWidth: 960}}>
       <h1>{post.title}</h1>
       <span>Written by {post.author}</span>
       <p>{post.formattedDate}</p>
@@ -31,6 +32,7 @@ export default ({ data }) => {
             .processSync(post.PostMarkdown),
         }}
       />
+      </PostWrapperParent>
     </Layout>
   )
 }
