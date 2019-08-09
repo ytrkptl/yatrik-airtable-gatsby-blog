@@ -3,6 +3,7 @@ import Footer from "../components/footer/footer"
 import Header from "../components/header/header"
 import SEO from "../components/seo"
 import { ThemeMessageForAirtable } from "../pages-styles/credits.styles"
+
 const SubmitNewBlogPost = () => {
   return (
     <>

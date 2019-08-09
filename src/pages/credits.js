@@ -1,5 +1,4 @@
 import React from "react"
-
 import AirtableLayout from "../components/layout/airtable-layout"
 import SEO from "../components/seo"
 import {

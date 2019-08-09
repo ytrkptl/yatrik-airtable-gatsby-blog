@@ -1,5 +1,4 @@
 import styled from "styled-components"
-import { Link } from "gatsby"
 
 export const BlogPostWrapperParent = styled.div`
   margin-left: 4%;

@@ -22,7 +22,6 @@ const AirtableLayout = ({ children }) => {
       <Header siteTitle={data.site.siteMetadata.title} />
       <DivInLayout>
         {children}
-      
       </DivInLayout>
       <Footer />
     </>
