@@ -14,10 +14,14 @@ export const StyledFooter = styled.footer`
   padding: 4%;
   right: 0;
   left: 0;
+  box-sizing: border-box;
   
   a {
     color: var(--footerLinkColor);
     text-decoration: none;
+  }
+  @media screen and (max-width: 400px) {
+    max-width: 100vw;
   }
 `
 export const StyledFooterGrid = styled.div`
@@ -28,7 +32,15 @@ export const StyledFooterGrid = styled.div`
   color: var(--textNormal);
   width: 100%;
   padding: 4%;
-  grid-gap: 2%;
+  grid-gap: 4%;
+
+  @media screen and (max-width: 400px) {
+    width: 400px;
+    grid-gap: 1%;
+    padding-left: 0;
+    padding-right: 0;
+
+  }
 `
 const StyledColumn = css`
   display: flex;
@@ -43,18 +55,22 @@ export const StyledColumn2 = styled.div`
 `
 export const StyledColumn3 = styled.div`
   ${StyledColumn};
+
+  & a {
+    margin: 10px 0px;
+  }
 `
 export const StyledText = styled.p`
   padding-bottom: 4px;
-  margin: 0px;
-  margin-block-start: 0;
-  margin-block-end: 0;
+  margin: 10px 0px;
+  // margin-block-start: 0;
+  // margin-block-end: 0;
 `
 
 export const StyledFooterLink = styled(Link)`
   text-decoration: none;
   color: var(--footerLinkColor);
-  margin: 0px;
+  margin: 10px 0px;
   padding-bottom: 10px;
   
   &:hover {

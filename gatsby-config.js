@@ -8,10 +8,12 @@ module.exports = {
     {
       resolve: 'gatsby-source-airtable',
       options: {
-        apiKey: process.env.AIRTABLE_API_KEY,
+        // apiKey: process.env.AIRTABLE_API_KEY,
+        apiKey: 'keyD2h8sy1iwcLkd7',
         tables: [
           {
-            baseId: process.env.AIRTABLE_BASE_ID,
+            // baseId: process.env.AIRTABLE_BASE_ID,
+            baseId: 'app74bp27kA8jrK8M',
             tableName: 'CMS',
             tableView: 'published'
           }

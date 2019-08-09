@@ -5,6 +5,10 @@ export const StyledHeader = styled.header`
   background: var(--headerTextBg);
   height: auto;
   width: 100%;
+
+  @media screen and (max-width: 600px) {
+    width: 100vw;
+  }
 `
 export const StyledDiv = styled.div`
   display: grid;
@@ -36,6 +40,10 @@ export const StyledH2 = styled.h1`
       color: var(--headerTextHovered);
     }
   }
+
+  @media screen and (max-width: 400px) {
+    padding-left: none;
+  }
 `
 
 export const StyledHeaderLink = styled(Link)`
@@ -63,7 +71,7 @@ export const OverlayContent = styled.div`
   width: 100%;
   display: flex;
   flex-direction: column;
-  justify-content: space-around;
+  justify-content: center;
   align-items: center;
 
   @media screen and (max-width: 600px) {
@@ -73,14 +81,14 @@ export const OverlayContent = styled.div`
 export const StyledOverlayLinkButton = styled.button.attrs({ type: "button" })`
   padding: 8px;
   text-decoration: none;
+  text-align: center;
   font-size: 28px;
   background-color: transparent;
   border: none;
   outline: none;
   padding: 0px;
   color: var(--overlayLink);
-  margin-left: 10px;
-  margin-right: 10px;
+  margin: 20px;
   display: flex;
   transition: all 0.2s ease-in-out;
 
@@ -96,14 +104,14 @@ export const StyledOverlayLinkButton = styled.button.attrs({ type: "button" })`
 export const StyledOverlayLink = styled(Link)`
   padding: 8px;
   text-decoration: none;
+  text-align: center;
   font-size: 28px;
   background-color: transparent;
   border: none;
   outline: none;
   padding: 0px;
   color: var(--overlayLink);
-  margin-left: 10px;
-  margin-right: 10px;
+  margin: 20px;
   display: flex;
   transition: all 0.2s ease-in-out;
 

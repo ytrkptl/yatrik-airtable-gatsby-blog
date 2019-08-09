@@ -18,7 +18,10 @@ const Footer = () => {
           <StyledText>
             © {new Date().getFullYear()}, Built with
             {` `}
-            <a href="https://www.gatsbyjs.org" target="_blank">Gatsby</a>
+            <a  href="https://www.gatsbyjs.org" 
+                target="_blank"
+                rel="noopener noreferrer"
+            >Gatsby</a>
           </StyledText>
         </StyledColumn1>
         <StyledColumn2>
@@ -28,7 +31,10 @@ const Footer = () => {
           <StyledFooterLink to="/credits/">Credits</StyledFooterLink>
         </StyledColumn2>
         <StyledColumn3>
-          <a href="https://github.com/ytrkptl/yatrik-airtable-gatsby-blog" target="_blank">GitHub</a>
+          <a  href="https://github.com/ytrkptl/yatrik-airtable-gatsby-blog" 
+              target="_blank"
+              rel="noopener noreferrer"
+          >GitHub</a>
         </StyledColumn3>
         <Row2>Created by: --- Yatrik Patel --- July 31, 2019</Row2>
       </StyledFooterGrid>

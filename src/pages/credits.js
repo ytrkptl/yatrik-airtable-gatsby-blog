@@ -28,14 +28,24 @@ export default () => {
         {dataArray.map((item, index) => (
           <StyledCreditsSpan key={index}>{item}</StyledCreditsSpan>
         ))}
-        <StyledFlaticonDiv>Icons made by 
-          <a href="https://www.flaticon.com/authors/geotatah" title="geotatah" style={{color: 'var(--themeTextColor)'}}>geotatah</a> 
-          from <a href="https://www.flaticon.com/" style={{color: 'var(--themeTextColor)'}}
-        title="Flaticon">www.flaticon.com</a> is licensed by <a href="http://creativecommons.org/licenses/by/3.0/"                 
-        title="Creative Commons BY 3.0" target="_blank" style={{color: 'var(--themeTextColor)'}}>CC 3.0 BY</a></StyledFlaticonDiv>        
+        <StyledFlaticonDiv>Icons made by {` `}
+          <a  href="https://www.flaticon.com/authors/geotatah" 
+              title="geotatah" 
+              style={{color: 'var(--themeTextColor)'}}
+          >geotatah</a> 
+          {` `}from 
+          <a  href="https://www.flaticon.com/" 
+              style={{color: 'var(--themeTextColor)'}}
+              title="Flaticon"
+          >www.flaticon.com</a> is licensed by 
+          <a  href="http://creativecommons.org/licenses/by/3.0/"                 
+              title="Creative Commons BY 3.0" 
+              target="_blank" 
+              rel="noopener noreferrer"
+              style={{color: 'var(--themeTextColor)'}}
+          >CC 3.0 BY</a>
+        </StyledFlaticonDiv>        
       </StyledCreditsDiv>
-      <div></div>
-
     </AirtableLayout>
   )
 }

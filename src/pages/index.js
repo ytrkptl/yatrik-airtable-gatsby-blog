@@ -5,6 +5,7 @@ import Layout from "../components/layout/layout"
 import SEO from "../components/seo"
 import {
   PostWrapperParent,
+  IndexHeader,
   PostWrapper,
   BlogLinkAndEmojiWrapper,
   EmojiStyle,
@@ -22,11 +23,11 @@ export default ({ data }) => {
     <Layout>
       <SEO title="Home" />
       <PostWrapperParent>
-        <h2 style={{ margin: "0.2em auto" }}>See all my blogs below</h2>
+        <IndexHeader>See all my blogs below</IndexHeader>
         <p>{data.allAirtable.totalCount} Posts</p>
         {data.allAirtable.edges.map(({ node }) => (
           <PostWrapper key={node.id}>
-            <BlogLink to={node.data.slug}>
+            <BlogLink to={`/${node.data.slug}`}>
               <BlogTitle>
                 <BlogLinkAndEmojiWrapper>
                   {node.data.title}
@@ -69,6 +70,7 @@ export const query = graphql`
             excerpt
             createdTime
           }
+          id
         }
       }
       totalCount

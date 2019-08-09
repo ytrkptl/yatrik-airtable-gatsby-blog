@@ -4,6 +4,12 @@ import { Link } from "gatsby"
 export const PostWrapperParent = styled.div`
   margin-left: 4%;
   margin-right: 4%;
+  max-width: 960px;
+  overflow-x: hidden;
+`
+
+export const IndexHeader = styled.h2`
+  margin: 10px auto;
 `
 export const PostWrapper = styled.div`
   border-top: 1px solid var(--borderDivLine);
@@ -52,6 +58,7 @@ export const ImageAndTextDiv = styled.div`
   @media screen and (max-width: 600px) {
     display: flex;
     flex-direction: column;
+    max-width: 100%;
   }
 `;
 
@@ -60,9 +67,10 @@ export const ImageAndTextGrid = styled.div`
   grid-template-columns: 3.6fr 8.4fr;
   text-align: left;
 
-  @media screen and (max-width: 600px) {
-    // grid-template-columns: 1fr;
-    // grid-template-rows: 1fr 4em;
+  @media screen and (max-width: 400px) {
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 1fr;
+    margin: auto;
   }
 `;
 

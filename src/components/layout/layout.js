@@ -22,9 +22,9 @@ const Layout = ({ children }) => {
     <>
       <Header siteTitle={data.site.siteMetadata.title} />
       <DivInLayout>
-        <main>{children}</main>
-        <Footer />
+       {children}
       </DivInLayout>
+      <Footer />
     </>
   )
 }
