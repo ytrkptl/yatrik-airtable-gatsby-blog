@@ -17,17 +17,25 @@ export const BlogPostWrapperParent = styled.div`
 export const BlogPostImageContainer = styled.div`
   display: flex;
   justify-content: center;
-  width: 60%;
-  max-width: 90vw;
+  max-width: 700px;
   margin: auto;
+
+  @media screen and (max-width: 600px) {
+    max-width: 100%;
+    max-height: 40%;
+  }
 `
 export const BlogPostImage = styled.img`
   display: block;
   margin: 10px;
   width: 100%;
   height: auto;
-  max-width: 600px;
- 
+
+  @media screen and (max-width: 600px) {
+    width: auto;
+    max-width: 100%;
+    max-height: 50vh;
+  }
 `
 
 export const BlogPostMarkdownOrOther = styled.div`
