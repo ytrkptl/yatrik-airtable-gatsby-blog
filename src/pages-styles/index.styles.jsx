@@ -15,7 +15,6 @@ export const PostWrapper = styled.div`
   border-top: 1px solid var(--borderDivLine);
   margin-top: 2em;
   max-width: 960px;
-  // max-height: 400px;
   overflow: hidden;
 `;
 
