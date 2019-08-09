@@ -1,7 +1,7 @@
 html {
   font-family: sans-serif;
-  /* -ms-text-size-adjust: 100%;
-  -webkit-text-size-adjust: 100%; */
+  -ms-text-size-adjust: 100%;
+  -webkit-text-size-adjust: 100%;
   overflow-x: hidden;
   width: 100%;
 }
@@ -65,4 +65,8 @@ body.dark {
   --creditListBgColor: #d7d7d7;
   --creditsListBgImage: linear-gradient(147deg, #4e4d4d 0%, #444343 74%);
   --themeMessageForAirtable: flex;
+}
+
+#gatsby-focus-wrapper {
+  overflow-x: hidden;
 }

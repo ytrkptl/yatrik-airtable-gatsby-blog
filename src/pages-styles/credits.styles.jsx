@@ -6,6 +6,7 @@ export const StyledCreditsDiv = styled.div`
   justify-content: flex-start;
   align-items: center;
   min-height: 80vh;
+  max-width: 100%;
 `;
 
 export const StyledCreditsTitle = styled.h2`
@@ -27,6 +28,7 @@ const StyledSpanOrDiv = css`
   font-family: "Maiandra GD";
   background-color: var(--creditListBgColor);
   background-image: var(--creditsListBgImage);
+  max-width: 100%;
 `;
 
 export const StyledCreditsSpan = styled.span`
