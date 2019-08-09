@@ -65,6 +65,7 @@ export const ImageAndTextGrid = styled.div`
   display: grid;
   grid-template-columns: 3.6fr 8.4fr;
   text-align: left;
+  width: 100%;
 
   @media screen and (max-width: 400px) {
     grid-template-columns: 1fr;
@@ -99,6 +100,5 @@ export const StyledExcerpt = styled.div`
 
   @media screen and (max-width: 600px) {
     margin: 0px;
-    padding-left: 10px;
   }
 `;
