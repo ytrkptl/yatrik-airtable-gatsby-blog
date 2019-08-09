@@ -83,11 +83,11 @@ export const ImageContainer = styled.div`
     height: 100px;
     margin: 4px auto;
   }
-  @media screen and (max-width: 600px) and (orientation: landscape) {
-    width: 100px;
-    height: 100px;
-    margin: 4px auto;
-  }
+  // @media screen and (max-width: 600px) and (orientation: landscape) {
+  //   width: 100px;
+  //   height: 100px;
+  //   margin: 4px auto;
+  // }
 `;
 
 export const ImageStyle = styled.img`
@@ -95,6 +95,7 @@ export const ImageStyle = styled.img`
 
   @media screen and (max-width: 600px) {
     width: 100%;
+    // max-height:
   }
 `;
 
