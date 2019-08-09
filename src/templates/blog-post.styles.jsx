@@ -30,6 +30,11 @@ export const BlogPostImage = styled.img`
  
 `
 
+export const BlogPostMarkdownOrOther = styled.div`
+  min-height: 80vh;
+  max-width: 100%;
+`
+
 export const StyledExcerpt = styled.div`
   width: 100%;
   box-sizing: border-box;

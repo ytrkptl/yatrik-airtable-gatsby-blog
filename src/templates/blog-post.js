@@ -28,7 +28,6 @@ export default ({ data }) => {
         <h3 style={{ textAlign: "center" }}>See Your Markdown post below </h3>
       ) : null}
       <BlogPostMarkdownOrOther
-        style={{ minHeight: "80vh", maxWidth: '100%' }}
         dangerouslySetInnerHTML={{
           __html: unified()
             .use(markdown)

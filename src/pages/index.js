@@ -26,7 +26,7 @@ export default ({ data }) => {
         <p>{data.allAirtable.totalCount} Posts</p>
         {data.allAirtable.edges.map(({ node }) => (
           <PostWrapper key={node.id}>
-            <BlogLink to={node.data.slug}>
+            <BlogLink to={`/${node.data.slug}`}>
               <BlogTitle>
                 <BlogLinkAndEmojiWrapper>
                   {node.data.title}
