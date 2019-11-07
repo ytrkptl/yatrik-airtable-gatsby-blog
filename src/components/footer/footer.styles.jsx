@@ -27,7 +27,7 @@ export const StyledFooter = styled.footer`
 export const StyledFooterGrid = styled.div`
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
-  grid-templates-rows: 1fr 1fr;
+  grid-template-rows: 1fr 20px;
   background-color: var(--footerBgColor);
   color: var(--textNormal);
   width: 100%;
@@ -46,6 +46,7 @@ const StyledColumn = css`
   display: flex;
   flex-direction: column;
   text-align: center;
+  margin-bottom: 20px;
 `;
 export const StyledColumn1 = styled.div`
   ${StyledColumn};
@@ -86,7 +87,7 @@ export const StyledFooterLink = styled(Link)`
 export const Row2 = styled.div`
   grid-column-start: span 3;
   grid-row-start: 2;
-  font-family: Maiandra GD, Roboto, sans-serif;
+  font-family: 'Maiandra GD', 'Roboto', sans-serif;
   justify-self: center;
   align-self: center;
   min-height: 4%;
