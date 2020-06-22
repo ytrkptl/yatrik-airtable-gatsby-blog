@@ -52,12 +52,17 @@ const Header = ({ siteTitle }) => {
         </StyledH2>
         <ThemeToggler>
           {({ theme, toggleTheme }) => (
-            <label className="switch" htmlFor="toggle-checkbox">
+            <label
+              className="switch"
+              htmlFor="toggle-checkbox"
+              style={{ cursor: "pointer" }}
+            >
               <input
                 type="checkbox"
                 onChange={e => toggleTheme(e.target.checked ? "dark" : "light")}
                 checked={theme === "dark"}
                 name="toggle-checkbox"
+                id="toggle-checkbox"
               />
               <span className="amPmEmoji"></span>
               <span className="amPmText"></span>
