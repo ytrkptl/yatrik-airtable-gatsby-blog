@@ -87,11 +87,13 @@ export const ImageContainer = styled.div`
 `
 
 export const ImageStyle = styled.img`
-  width: 80%;
-  max-height: 380px;
+  max-width: 80%;
+  max-height: 340px;
+  height: auto;
+  width: auto;
 
   @media screen and (max-width: 600px) {
-    width: 100%;
+    max-width: 100%;
   }
 `
 
