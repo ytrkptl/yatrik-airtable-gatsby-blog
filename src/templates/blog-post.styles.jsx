@@ -28,11 +28,12 @@ export const BlogPostImageContainer = styled.div`
 export const BlogPostImage = styled.img`
   display: block;
   margin: 10px;
-  width: 100%;
+  max-width: 600px;
+  max-height: 600px;
+  width: auto;
   height: auto;
 
   @media screen and (max-width: 600px) {
-    width: auto;
     max-width: 100%;
     max-height: 50vh;
   }
@@ -52,4 +53,4 @@ export const StyledExcerpt = styled.div`
     margin: 0px;
     padding-left: 10px;
   }
-`;
+`
