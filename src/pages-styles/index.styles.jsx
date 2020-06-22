@@ -16,12 +16,13 @@ export const PostWrapper = styled.div`
   margin-top: 2em;
   max-width: 960px;
   overflow: hidden;
-`;
+  max-height: 400px;
+`
 
 export const BlogLinkAndEmojiWrapper = styled.div`
   display: flex;
   align-items: center;
-`;
+`
 
 export const EmojiStyle = styled.span`
   margin-left: 0.5em;
@@ -30,7 +31,7 @@ export const EmojiStyle = styled.span`
   &::before {
     content: var(--emoji);
   }
-`;
+`
 
 export const BlogLink = styled(Link)`
   text-decoration: none;
@@ -39,7 +40,7 @@ export const BlogLink = styled(Link)`
   &:hover {
     color: var(--blogLinkHovered);
   }
-`;
+`
 
 export const BlogTitle = styled.h2`
   margin-bottom: 20px;
@@ -47,7 +48,7 @@ export const BlogTitle = styled.h2`
   @media screen and (max-width: 600px) {
     margin-bottom: 0px;
   }
-`;
+`
 
 export const ImageAndTextDiv = styled.div`
   display: inline-flex;
@@ -59,7 +60,7 @@ export const ImageAndTextDiv = styled.div`
     flex-direction: column;
     max-width: 100%;
   }
-`;
+`
 
 export const ImageAndTextGrid = styled.div`
   display: grid;
@@ -72,7 +73,7 @@ export const ImageAndTextGrid = styled.div`
     grid-template-rows: 1fr 1fr;
     margin: auto;
   }
-`;
+`
 
 export const ImageContainer = styled.div`
   display: flex;
@@ -83,21 +84,16 @@ export const ImageContainer = styled.div`
     height: 100px;
     margin: 4px auto;
   }
-  // @media screen and (max-width: 600px) and (orientation: landscape) {
-  //   width: 100px;
-  //   height: 100px;
-  //   margin: 4px auto;
-  // }
-`;
+`
 
 export const ImageStyle = styled.img`
   width: 80%;
+  max-height: 380px;
 
   @media screen and (max-width: 600px) {
     width: 100%;
-    // max-height:
   }
-`;
+`
 
 export const StyledExcerpt = styled.div`
   width: 100%;
@@ -107,4 +103,4 @@ export const StyledExcerpt = styled.div`
   @media screen and (max-width: 600px) {
     margin: 0px;
   }
-`;
+`
