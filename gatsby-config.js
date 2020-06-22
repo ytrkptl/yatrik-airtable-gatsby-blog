@@ -1,3 +1,9 @@
+// require("dotenv").config({
+//   path: `.env.${process.env.NODE_ENV}`,
+// })
+
+// comment out the above when pushing to production
+
 module.exports = {
   siteMetadata: {
     title: `Yatrik's Airtable Gatsby Blog`,
