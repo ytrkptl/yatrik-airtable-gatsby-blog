@@ -6,17 +6,17 @@ module.exports = {
   },
   plugins: [
     {
-      resolve: 'gatsby-source-airtable',
+      resolve: "gatsby-source-airtable",
       options: {
         apiKey: process.env.AIRTABLE_API_KEY,
         tables: [
           {
             baseId: process.env.AIRTABLE_BASE_ID,
-            tableName: 'CMS',
-            tableView: 'published'
-          }
-        ]
-      }
+            tableName: "CMS",
+            tableView: "published",
+          },
+        ],
+      },
     },
     {
       resolve: `gatsby-source-filesystem`,
@@ -32,7 +32,7 @@ module.exports = {
         path: `${__dirname}/src/templates`,
       },
     },
-    'gatsby-plugin-dark-mode',
+    "gatsby-plugin-dark-mode",
     `gatsby-plugin-react-helmet`,
     `gatsby-transformer-sharp`,
     `gatsby-plugin-styled-components`,
@@ -40,8 +40,8 @@ module.exports = {
     {
       resolve: `gatsby-plugin-manifest`,
       options: {
-        name: `gatsby-starter-default`,
-        short_name: `starter`,
+        name: `Yatrik's Airtable Gatsby Blog`,
+        short_name: `Yatrik's Airtable Blog`,
         start_url: `/`,
         background_color: `#663399`,
         theme_color: `#663399`,

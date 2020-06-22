@@ -14,7 +14,7 @@ import {
   ImageAndTextGrid,
   ImageContainer,
   ImageStyle,
-  StyledExcerpt
+  StyledExcerpt,
 } from "../pages-styles/index.styles"
 
 export default ({ data }) => {
