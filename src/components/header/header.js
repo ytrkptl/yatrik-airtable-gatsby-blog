@@ -32,11 +32,18 @@ const Header = ({ siteTitle }) => {
   const closeNav = () => {
     menuRef.current.style.height = "0%"
   }
-  let pathName = ''
+
+  const onKeyPressFunc = event => {
+    if (event.key === "Enter") {
+      toggleFunc()
+    }
+  }
+
+  let pathName = ""
   if (typeof window !== `undefined`) {
     pathName = window.location.pathname
   }
-  
+
   return (
     <StyledHeader>
       <StyledDiv>
@@ -45,11 +52,12 @@ const Header = ({ siteTitle }) => {
         </StyledH2>
         <ThemeToggler>
           {({ theme, toggleTheme }) => (
-            <label className="switch">
+            <label className="switch" htmlFor="toggle-checkbox">
               <input
                 type="checkbox"
                 onChange={e => toggleTheme(e.target.checked ? "dark" : "light")}
                 checked={theme === "dark"}
+                name="toggle-checkbox"
               />
               <span className="amPmEmoji"></span>
               <span className="amPmText"></span>
@@ -93,7 +101,13 @@ const Header = ({ siteTitle }) => {
               )}
             </OverlayContent>
           </Overlay>
-          <span onClick={toggleFunc} id="hamburgerRef">
+          <span
+            onClick={toggleFunc}
+            onKeyDown={event => onKeyPressFunc(event)}
+            id="hamburgerRef"
+            role="button"
+            tabIndex={0}
+          >
             <div ref={hamburgerRef} className="hamburgerContainer">
               <div className="bar1"></div>
               <div className="bar2"></div>
