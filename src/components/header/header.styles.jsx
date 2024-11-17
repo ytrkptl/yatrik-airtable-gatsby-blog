@@ -12,7 +12,6 @@ export const StyledHeader = styled.header`
 `
 export const StyledDiv = styled.div`
   display: grid;
-  // justify-content: space-between;
   align-items: center;
   max-width: 960px;
   padding: 10px;
@@ -25,12 +24,11 @@ export const StyledDiv = styled.div`
 `
 export const StyledH2 = styled.h1`
   margin: 0;
-  padding: 0;
+  padding: 0 0 0 10px;
   margin-block-start: 0;
   margin-block-end: 0;
   margin-inline-start: 0;
   margin-inline-end: 0;
-  padding-left: 10px;
   font-family: Segoe UI, sans-serif;
 
   & a {
@@ -42,7 +40,7 @@ export const StyledH2 = styled.h1`
   }
 
   @media screen and (max-width: 400px) {
-    padding-left: none;
+    padding-left: unset;
   }
 `
 
@@ -79,14 +77,13 @@ export const OverlayContent = styled.div`
   }
 `
 export const StyledOverlayLinkButton = styled.button.attrs({ type: "button" })`
-  padding: 8px;
   text-decoration: none;
   text-align: center;
   font-size: 28px;
   background-color: transparent;
   border: none;
   outline: none;
-  padding: 0px;
+  padding: 0;
   color: var(--overlayLink);
   margin: 20px;
   display: flex;
@@ -102,14 +99,13 @@ export const StyledOverlayLinkButton = styled.button.attrs({ type: "button" })`
   }
 `
 export const StyledOverlayLink = styled(Link)`
-  padding: 8px;
   text-decoration: none;
   text-align: center;
   font-size: 28px;
   background-color: transparent;
   border: none;
   outline: none;
-  padding: 0px;
+  padding: 0;
   color: var(--overlayLink);
   margin: 20px;
   display: flex;
