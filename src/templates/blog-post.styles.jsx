@@ -8,8 +8,6 @@ export const BlogPostWrapperParent = styled.div`
 
   @media screen and (max-width: 400px) {
     max-width: 90%;
-    margin-left: none;
-    margin-right: none;
     padding: 0;
     margin: 0;
   }

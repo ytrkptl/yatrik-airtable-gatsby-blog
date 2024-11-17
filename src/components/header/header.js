@@ -73,11 +73,6 @@ const Header = ({ siteTitle }) => {
             ref={menuRef}
             id="myNav">
             <OverlayContent id="overlay-content">
-              {pathName === "/submit-a-new-post/" ? (
-                <StyledOverlayLinkButton onClick={toggleFunc}>Submit a blog post!</StyledOverlayLinkButton>
-              ) : (
-                <StyledOverlayLink to="/submit-a-new-post/">Submit a blog post!</StyledOverlayLink>
-              )}
               {pathName === "/gallery-view/" ? (
                 <StyledOverlayLinkButton onClick={toggleFunc}>Switch to Gallery View</StyledOverlayLinkButton>
               ) : (

@@ -58,14 +58,12 @@ export const StyledColumn3 = styled.div`
   ${StyledColumn};
 
   & a {
-    margin: 10px 0px;
+    margin: 10px 0;
   }
 `
 export const StyledText = styled.p`
   padding-bottom: 4px;
-  margin: 10px 0px;
-  // margin-block-start: 0;
-  // margin-block-end: 0;
+  margin: 10px 0;
 `
 
 export const StyledFooterLink = styled(Link)`
@@ -78,11 +76,6 @@ export const StyledFooterLink = styled(Link)`
     text-decoration: underline;
   }
 `;
-
-
-// export const StyledGitHubLink = styled.img`
-//   width: 54px;
-// `
 
 export const Row2 = styled.div`
   grid-column-start: span 3;
