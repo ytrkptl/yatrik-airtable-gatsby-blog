@@ -5,12 +5,7 @@ import { StyledCreditsDiv, StyledCreditsTitle, StyledAboutMeSpan } from "../page
 
 const AboutMePage = () => {
   const dataArray = [
-    `I am a math teacher who is passionate about becoming a develop.
-    I have learned a lot on Udemy recently using Andrei's courses. I 
-    hope to win this coding challenge, which is why I have created this
-    Gatsby blog. Oh, I love the 'spreadsheet meets database' concept of
-    Airtable, hence I incorporated that in here as well. Please excuse
-    any mistakes, however, suggestions for improvement are welcomed. `
+    `I am a Software Engineer at Virginia Tech, committed to continuous growth and excelling in learning new skills. In my current role, I leverage PHP for backend development and Vue.js for frontend development, designing and maintaining internal departmental web applications. My work focuses on creating REST APIs, dynamic front-end features, and optimizing full-stack solutions. My passion for learning is reflected in both my self-directed skill acquisition and formal education, including my pursuit of a Master of Information Technology at Virginia Tech. Prior to transitioning into tech, I spent 8 years as a licensed math teacher, where I developed the versatility and problem-solving skills that continue to drive my success across new disciplines.`
   ];
   return (
     <AirtableLayout>
