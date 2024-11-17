@@ -25,7 +25,6 @@ const Footer = () => {
           </StyledText>
         </StyledColumn1>
         <StyledColumn2>
-          <StyledFooterLink to="/submit-a-new-post/">Submit a blog post!</StyledFooterLink>
           <StyledFooterLink to="/gallery-view/">Switch to Gallery View</StyledFooterLink>
           <StyledFooterLink to="/aboutme/">About Me</StyledFooterLink>
           <StyledFooterLink to="/credits/">Credits</StyledFooterLink>
