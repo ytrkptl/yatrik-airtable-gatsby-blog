@@ -26,7 +26,7 @@ const HomePage = ({ data }) => {
       if (imageName.includes(",")) {
         imageToUse = imageName.split(",")[0];
       }
-      return `https://res.cloudinary.com/dun1b4fpw/image/upload/f_auto,q_auto,w_auto,h_340/v1730337029/airtable-gatsby-blog/${imageToUse}.jpg`;
+      return `https://res.cloudinary.com/dun1b4fpw/image/upload/f_auto,q_auto,w_auto,h_340/v1731878936/airtable-gatsby-blog/${imageToUse}.jpg`;
     });
 
   return (
@@ -49,7 +49,6 @@ const HomePage = ({ data }) => {
               <ImageAndTextGrid>
                 <ImageContainer>
                   <ImageStyle
-                    // src={node.data.image[0].url}
                     src={images[index]}
                     alt="blog-image"
                   />
