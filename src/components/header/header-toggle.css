@@ -15,8 +15,8 @@
 /* Hide default HTML checkbox */
 .switch input {
   opacity: 0;
-  height: 0;
-  width: 0;
+  height: 10px;
+  width: 10px;
   display: flex;
   flex-direction: column;
 }
@@ -37,28 +37,3 @@
   content: var(--themeText);
   z-index: 2;
 }
-/* input:checked + .slider {
-  background-color: var(--sliderBg);
-}
-
-input:focus + .slider {
-  box-shadow: 0 0 1px var(--sliderBg);
-}
-
-input:checked + .slider:before {
-  -webkit-transform: translateX(1.3em);
-  -ms-transform: translateX(1.3em);
-  transform: translateX(1.3em);
-} */
-
-/* .amPmText {
-  position: relative;
-  color: var(--themeTextColor);
-  z-index: 2;
-}
-.amPmText::before {
-  position: relative;
-  content: var(--themeText);
-  top: -16px;
-  right: 52px;
-} */

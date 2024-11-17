@@ -1,7 +1,7 @@
-import React from "react"
-import { graphql } from "gatsby"
-import Layout from "../components/layout/layout"
-import SEO from "../components/seo"
+import React from "react";
+import { graphql } from "gatsby";
+import Layout from "../components/layout/layout";
+import Seo from "../components/seo";
 import {
   PostWrapperParent,
   IndexHeader,
@@ -14,17 +14,27 @@ import {
   ImageAndTextGrid,
   ImageContainer,
   ImageStyle,
-  StyledExcerpt,
-} from "../pages-styles/index.styles"
+  StyledExcerpt
+} from "../pages-styles/index.styles";
 
-export default ({ data }) => {
+const HomePage = ({ data }) => {
+  const images = data?.allAirtable.edges
+    .map(({ node }) => node.data.imageName)
+    .map((imageName) => {
+      // if imageName has a comma, split it and return the first part
+      let imageToUse = imageName;
+      if (imageName.includes(",")) {
+        imageToUse = imageName.split(",")[0];
+      }
+      return `https://res.cloudinary.com/dun1b4fpw/image/upload/f_auto,q_auto,w_auto,h_340/v1730337029/airtable-gatsby-blog/${imageToUse}.jpg`;
+    });
+
   return (
     <Layout>
-      <SEO title="Home" />
       <PostWrapperParent>
         <IndexHeader>See all my blogs below</IndexHeader>
-        <p>{data.allAirtable.totalCount} Posts</p>
-        {data.allAirtable.edges.map(({ node }) => (
+        <p>{data?.allAirtable.totalCount} Posts</p>
+        {data?.allAirtable.edges.map(({ node }, index) => (
           <PostWrapper key={node.id}>
             <BlogLink to={`/${node.data.slug}`}>
               <BlogTitle>
@@ -38,7 +48,11 @@ export default ({ data }) => {
             <ImageAndTextDiv>
               <ImageAndTextGrid>
                 <ImageContainer>
-                  <ImageStyle src={node.data.image[0].url} alt="blog-image" />
+                  <ImageStyle
+                    // src={node.data.image[0].url}
+                    src={images[index]}
+                    alt="blog-image"
+                  />
                 </ImageContainer>
                 <StyledExcerpt>{node.data.excerpt}</StyledExcerpt>
               </ImageAndTextGrid>
@@ -47,14 +61,21 @@ export default ({ data }) => {
         ))}
       </PostWrapperParent>
     </Layout>
-  )
-}
+  );
+};
+
+export default HomePage;
+
+/**
+ * Head export to define metadata for the page
+ *
+ * See: https://www.gatsbyjs.com/docs/reference/built-in-components/gatsby-head/
+ */
+export const Head = () => <Seo title="Home" />;
 
 export const query = graphql`
   query {
-    allAirtable(
-      sort: { fields: [data___date, data___createdTime], order: [DESC, DESC] }
-    ) {
+    allAirtable(sort: { data: { createdTime: DESC } }) {
       edges {
         node {
           data {
@@ -64,10 +85,10 @@ export const query = graphql`
             image {
               url
             }
-            date
             formattedDate
             excerpt
             createdTime
+            imageName
           }
           id
         }
@@ -75,4 +96,4 @@ export const query = graphql`
       totalCount
     }
   }
-`
+`;
