@@ -1,4 +1,4 @@
-import styled from "styled-components"
+import styled from "styled-components";
 
 export const BlogPostWrapperParent = styled.div`
   margin-left: 4%;
@@ -13,7 +13,7 @@ export const BlogPostWrapperParent = styled.div`
     padding: 0;
     margin: 0;
   }
-`
+`;
 export const BlogPostImageContainer = styled.div`
   display: flex;
   justify-content: center;
@@ -24,7 +24,7 @@ export const BlogPostImageContainer = styled.div`
     max-width: 100%;
     max-height: 40%;
   }
-`
+`;
 export const BlogPostImage = styled.img`
   display: block;
   margin: 10px;
@@ -37,12 +37,12 @@ export const BlogPostImage = styled.img`
     max-width: 100%;
     max-height: 50vh;
   }
-`
+`;
 
 export const BlogPostMarkdownOrOther = styled.div`
   min-height: 80vh;
   max-width: 100%;
-`
+`;
 
 export const StyledExcerpt = styled.div`
   width: 100%;
@@ -53,4 +53,4 @@ export const StyledExcerpt = styled.div`
     margin: 0px;
     padding-left: 10px;
   }
-`
+`;

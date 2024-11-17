@@ -38,7 +38,6 @@ export const StyledFlaticonDiv = styled.div`
   ${StyledSpanOrDiv}
 `;
 
-
 export const StyledAboutMeSpan = styled.span`
   margin: 10px;
   padding: 40px 60px;
