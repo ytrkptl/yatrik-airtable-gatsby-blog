@@ -13,6 +13,7 @@ import {
 
 const BlogPost = ({ data }) => {
   const post = data.airtable.data;
+  const imageName = post.imageName.includes(",") ? post.imageName.split(",")[1] : post.imageName;
   return (
     <Layout>
       <BlogPostWrapperParent>
@@ -21,7 +22,7 @@ const BlogPost = ({ data }) => {
         <p>{post.formattedDate}</p>
         <BlogPostImageContainer>
           <BlogPostImage
-            src={post.image[0].url}
+            src={`https://res.cloudinary.com/dun1b4fpw/image/upload/v1731878936/airtable-gatsby-blog/${imageName}.jpg`}
             alt="blog"
           />
         </BlogPostImageContainer>
@@ -51,6 +52,7 @@ export const query = graphql`
         }
         formattedDate
         fileType
+        imageName
       }
     }
   }
