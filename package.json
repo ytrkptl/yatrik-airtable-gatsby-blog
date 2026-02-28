@@ -20,7 +20,7 @@
   "license": "0BSD",
   "dependencies": {
     "babel-plugin-styled-components": "^2.1.4",
-    "gatsby": "^5.15.0",
+    "gatsby": "^5.16.1",
     "gatsby-plugin-image": "^3.13.1",
     "gatsby-plugin-manifest": "^5.13.1",
     "gatsby-plugin-sharp": "^5.13.1",
